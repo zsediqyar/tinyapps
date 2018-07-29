@@ -22,3 +22,21 @@ body {
 .snipper-cards {
   margin-top: 3em;
 }
+
+
+.badge-info {
+  height: 38px;
+  padding-top: 1em;
+  color: white;
+}
+
+.badge-info span {
+  text-align: center;
+  color: white;
+}
+
+
+
+button:hover {
+    cursor: pointer;
+}
