@@ -36,10 +36,10 @@ function anagramLogic (a,b) {
   var secondWord = document.getElementById("secondWord").value;
   var anagramResult = document.getElementById("anagramResult");
   
-  firstWord = a.split("").sort().join("");
-  secondWord = b.split("").sort().join("");
+  a = firstWord.split("").sort().join("");
+  b = secondWord.split("").sort().join("");
   
-  if (firstWord == secondWord) {
+  if (a == b) {
     anagramResult.innerHTML = "Yay!! " + firstWord + " & " + secondWord + " are Anagrams.";
   } else {
     anagramResult.innerHTML = "Oops!! They seem to not be Anagrams :(";
