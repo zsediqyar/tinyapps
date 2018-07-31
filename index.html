@@ -57,9 +57,9 @@
           <div class="card-body">
             <h5 class="card-title">Pixel to EM</h5>
             <p class="card-text">Enter the Pixel value</p>
-            <input type="number" id="pixelInput" class="form-control" placeholder="Pixel value in numbers">
+            <input type="number" id="pixelInput" class="form-control" placeholder="Pixel value in numbers" onchange="showEmResult();">
             <br>
-            <button type="button" name="button" class="btn btn-primary" id="emBtn" onclick="showEmResult();">Enter</button>
+            <button type="button" name="button" class="btn btn-primary" onclick="showEmResult();">Enter</button>
             <span id="emResult" class="float-right badge badge-info">000</span>
           </div>
         </div>
@@ -69,18 +69,23 @@
         <div class="card">
           <div class="card-body">
             <h5 class="card-title">Temperature</h5>
-            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <p class="card-text">Celsius to Fahrenheit</p>
+            <input type="number" id="celsius" class="form-control" placeholder="Enter Celsius to see Fahrenheit" onchange="celToFahUi();">
+            <button type="button" name="button" class="btn btn-primary" onclick="celToFahUi();">Enter</button>
+            <span id="celToFahResult" class="float-right badge badge-info">000</span>
           </div>
         </div>
       </div>
-
+      
       <div class="col-md-4">
         <div class="card">
           <div class="card-body">
             <h5 class="card-title">Anagram Finder</h5>
-            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <p class="card-text">Enter two words to see if they are Anagrams</p>
+            <input type="text" class="form-control" id="firstWord" placeholder="First Word">
+            <input type="text" class="form-control" id="secondWord" placeholder="Second Word">
+            <button type="button" class="btn btn-primary" onclick="anagramLogic();">Enter</button>
+            <span id="anagramResult">.....</span>
           </div>
         </div>
       </div>
