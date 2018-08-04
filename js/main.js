@@ -30,6 +30,21 @@ function celToFahUi () {
 }
 
 
+function fahToCelLogic () {
+  var fahValue = document.getElementById("fahrenheit").value;
+  var fahToCelResult = Math.round((fahValue - 32) * 5 / 9);
+  
+  return fahToCelResult;
+}
+
+function fahToCelUi () {
+  var fahToCeled = fahToCelLogic();
+  var fahCelResult = document.getElementById("fahCelResult");
+  
+  fahCelResult.innerHTML = fahToCeled;
+  
+}
+
 //************ Anagram Finder ****************
 function anagramLogic (a,b) {
   var firstWord = document.getElementById("firstWord").value;

@@ -71,8 +71,15 @@
             <h5 class="card-title">Temperature</h5>
             <p class="card-text">Celsius to Fahrenheit</p>
             <input type="number" id="celsius" class="form-control" placeholder="Enter Celsius to see Fahrenheit" onchange="celToFahUi();">
+            <br>
             <button type="button" name="button" class="btn btn-primary" onclick="celToFahUi();">Enter</button>
             <span id="celToFahResult" class="float-right badge badge-info">000</span>
+            
+            <p class="card-text">Fahrenheit to Celsius</p>
+            <input type="number" id="fahrenheit" class="form-control" placeholder="Enter Fahrenheit to see Celsius" onchange="fahToCelUi();">
+            <br>
+            <button type="button" name="button" class="btn btn-primary" onclick="fahToCelUi();">Enter</button>
+            <span id="fahCelResult" class="float-right badge badge-info">000</span>
           </div>
         </div>
       </div>
@@ -82,10 +89,11 @@
           <div class="card-body">
             <h5 class="card-title">Anagram Finder</h5>
             <p class="card-text">Enter two words to see if they are Anagrams</p>
-            <input type="text" class="form-control" id="firstWord" placeholder="First Word">
-            <input type="text" class="form-control" id="secondWord" placeholder="Second Word">
+            <input type="text" class="form-control" id="firstWord" placeholder="First Word"> <br>
+            <input type="text" class="form-control" id="secondWord" placeholder="Second Word" onchange="anagramLogic();">
+            <br>
             <button type="button" class="btn btn-primary" onclick="anagramLogic();">Enter</button>
-            <span id="anagramResult">.....</span>
+            <span id="anagramResult" class="float-right">.....</span>
           </div>
         </div>
       </div>

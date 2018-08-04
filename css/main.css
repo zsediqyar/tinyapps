@@ -40,3 +40,8 @@ body {
 button:hover {
     cursor: pointer;
 }
+
+.card {
+  height: 110%;
+  margin: .5em auto;
+}
