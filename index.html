@@ -60,7 +60,13 @@
             <input type="number" id="pixelInput" class="form-control" placeholder="Pixel value in numbers" onchange="showEmResult();">
             <br>
             <button type="button" name="button" class="btn btn-primary" onclick="showEmResult();">Enter</button>
-            <span id="emResult" class="float-right badge badge-info">000</span>
+            <span id="emResult" class="float-right badge badge-info">...</span>
+            <br><br>
+            <p class="card-text">Enter the EM value</p>
+            <input type="number" id="emInput" class="form-control" placeholder="Em value in numbers" onchange="showPxResult();">
+            <br>
+            <button type="button" name="button" class="btn btn-primary" onclick="showPxResult();">Enter</button>
+            <span id="pxResult" class="float-right badge badge-info">...</span>
           </div>
         </div>
       </div>
@@ -73,13 +79,13 @@
             <input type="number" id="celsius" class="form-control" placeholder="Enter Celsius to see Fahrenheit" onchange="celToFahUi();">
             <br>
             <button type="button" name="button" class="btn btn-primary" onclick="celToFahUi();">Enter</button>
-            <span id="celToFahResult" class="float-right badge badge-info">000</span>
-            
+            <span id="celToFahResult" class="float-right badge badge-info">...</span>
+            <br><br>
             <p class="card-text">Fahrenheit to Celsius</p>
             <input type="number" id="fahrenheit" class="form-control" placeholder="Enter Fahrenheit to see Celsius" onchange="fahToCelUi();">
             <br>
             <button type="button" name="button" class="btn btn-primary" onclick="fahToCelUi();">Enter</button>
-            <span id="fahCelResult" class="float-right badge badge-info">000</span>
+            <span id="fahCelResult" class="float-right badge badge-info">...</span>
           </div>
         </div>
       </div>
@@ -93,7 +99,7 @@
             <input type="text" class="form-control" id="secondWord" placeholder="Second Word" onchange="anagramLogic();">
             <br>
             <button type="button" class="btn btn-primary" onclick="anagramLogic();">Enter</button>
-            <span id="anagramResult" class="float-right">.....</span>
+            <span id="anagramResult" class="float-right badge badge-info">...</span>
           </div>
         </div>
       </div>
@@ -108,8 +114,11 @@
         <div class="card">
           <div class="card-body">
             <h5 class="card-title">Even & Odd Finder</h5>
-            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <p class="card-text">Enter a number to check if it's Odd or Even</p>
+            <input type="number" id="oeNum" placeholder="Enter a number" class="form-control" onchange="oeFinder();">
+            <br>
+            <button type="button" class="btn btn-primary" onclick="oeFinder();">Enter</button>
+            <span class="float-right badge badge-info" id="oeResult">...</span>
           </div>
         </div>
       </div>

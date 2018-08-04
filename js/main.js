@@ -14,6 +14,21 @@ function showEmResult () {
 }
 
 
+//em to pixel logic
+function conEmToPx () {
+  var emInput = document.getElementById("emInput").value;
+  var emPxResult = emInput * 16;
+  
+  return emPxResult;
+}
+
+//em to pixel ui
+function showPxResult () {
+  var emPixel = conEmToPx();
+  var pxResult = document.getElementById("pxResult").innerHTML = emPixel;
+}
+
+
 //********** Temperature ****************
 function celToFahLogic () {
   var celBaseValue = 32;
@@ -58,5 +73,18 @@ function anagramLogic (a,b) {
     anagramResult.innerHTML = "Yay!! " + firstWord + " & " + secondWord + " are Anagrams.";
   } else {
     anagramResult.innerHTML = "Oops!! They seem to not be Anagrams :(";
+  }
+}
+
+//***************** Odd and Even Finder **************
+
+function oeFinder () {
+  var oeVal = document.getElementById("oeNum").value;
+  var oeResult = document.getElementById("oeResult");
+  
+  if(oeVal%2 == 0) {
+    oeResult.innerHTML = "Even";
+  } else {
+    oeResult.innerHTML = "Odd";
   }
 }
