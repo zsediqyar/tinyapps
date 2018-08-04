@@ -24,7 +24,7 @@ body {
 }
 
 .badge {
- font-size: 1.1em;  
+ font-size: 1.1em;
  font-family: 'Play', sans-serif;
 }
 
@@ -59,9 +59,11 @@ button:hover {
   .display-4 {
     font-size: 2em;
   }
-  
+
   #header {
     height: 100px;
+  } #anagramResult.badge {
+    font-size: 1em;
   }
 }
 

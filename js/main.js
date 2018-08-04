@@ -70,9 +70,9 @@ function anagramLogic (a,b) {
   b = secondWord.toLowerCase().split("").sort().join("");
 
   if (a == b) {
-    anagramResult.innerHTML = "Yay!! " + firstWord + " & " + secondWord + " are Anagrams.";
+    anagramResult.innerHTML = "Yes, they are Anagrams";
   } else {
-    anagramResult.innerHTML = "Oops!! They seem to not be Anagrams :(";
+    anagramResult.innerHTML = "Sorry, not Anagrams";
   }
 }
 
