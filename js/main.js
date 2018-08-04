@@ -18,7 +18,7 @@ function showEmResult () {
 function conEmToPx () {
   var emInput = document.getElementById("emInput").value;
   var emPxResult = emInput * 16;
-  
+
   return emPxResult;
 }
 
@@ -33,14 +33,14 @@ function showPxResult () {
 function celToFahLogic () {
   var celBaseValue = 32;
   var celValue = document.getElementById("celsius").value;
-  
+
   return celValue * 1.8 + 32;
 }
 
 function celToFahUi () {
   var celToFahed = celToFahLogic();
   var celToFahResult = document.getElementById("celToFahResult");
-  
+
   celToFahResult.innerHTML = celToFahed;
 }
 
@@ -48,16 +48,16 @@ function celToFahUi () {
 function fahToCelLogic () {
   var fahValue = document.getElementById("fahrenheit").value;
   var fahToCelResult = Math.round((fahValue - 32) * 5 / 9);
-  
+
   return fahToCelResult;
 }
 
 function fahToCelUi () {
   var fahToCeled = fahToCelLogic();
   var fahCelResult = document.getElementById("fahCelResult");
-  
+
   fahCelResult.innerHTML = fahToCeled;
-  
+
 }
 
 //************ Anagram Finder ****************
@@ -65,10 +65,10 @@ function anagramLogic (a,b) {
   var firstWord = document.getElementById("firstWord").value;
   var secondWord = document.getElementById("secondWord").value;
   var anagramResult = document.getElementById("anagramResult");
-  
-  a = firstWord.split("").sort().join("");
-  b = secondWord.split("").sort().join("");
-  
+
+  a = firstWord.toLowerCase().split("").sort().join("");
+  b = secondWord.toLowerCase().split("").sort().join("");
+
   if (a == b) {
     anagramResult.innerHTML = "Yay!! " + firstWord + " & " + secondWord + " are Anagrams.";
   } else {
@@ -81,7 +81,7 @@ function anagramLogic (a,b) {
 function oeFinder () {
   var oeVal = document.getElementById("oeNum").value;
   var oeResult = document.getElementById("oeResult");
-  
+
   if(oeVal%2 == 0) {
     oeResult.innerHTML = "Even";
   } else {
